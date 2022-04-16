@@ -13,7 +13,10 @@ public class TestMain  {
         // Следует отметить что скрипт работает с интерфейсом,
         // а не с реализацией.
     	
-    	System.setProperty("webdriver.gecko.driver", "C:\\Users\\User\\eclipse-workspace\\test_selenium\\geckodriver.exe");
+    	System.setProperty("webdriver.gecko.driver", "D:\\1\\студенты\\ОРПО\\geckodriver.exe");
+    	
+    	//скачай и пропиши свой путь до драйвера
+    	//https://github.com/mozilla/geckodriver/releases
     	
         WebDriver driver = new FirefoxDriver();
 
@@ -24,7 +27,7 @@ public class TestMain  {
         WebElement element = driver.findElement(By.name("q"));
 
         // Вводим текст
-        element.sendKeys("тусур з-37");
+        element.sendKeys("тусур з-38");
 
         // Отправляем форму, при этом дравер сам определит, как отправить форму по элементу
         element.submit();
@@ -35,7 +38,7 @@ public class TestMain  {
         // Ждем загрузки страницы с таймаутом в 10 секунд
         (new WebDriverWait(driver, 10)).until(new ExpectedCondition<Boolean>() {
             public Boolean apply(WebDriver d) {
-                return d.getTitle().toLowerCase().startsWith("тусур з-37");
+                return d.getTitle().toLowerCase().startsWith("тусур з-38");
             }
         });
         

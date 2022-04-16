@@ -2,8 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.16"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>UnitIestExample: Класс testing::internal::GTestFlagSaver</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -19,8 +19,8 @@
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
-  <td id="projectalign" style="padding-left: 0.5em;">
+ <tr id="projectrow">
+  <td id="projectalign">
    <div id="projectname">UnitIestExample
    </div>
   </td>
@@ -29,21 +29,22 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.16 -->
+<!-- Создано системой Doxygen 1.9.3 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Поиск','.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('',true,false,'search.php','Поиск');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -67,14 +68,13 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a>  </div>
-  <div class="headertitle">
-<div class="title">Класс testing::internal::GTestFlagSaver</div>  </div>
+  <div class="headertitle"><div class="title">Класс testing::internal::GTestFlagSaver</div></div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="gtest-internal-inl_8h_source.html">gtest-internal-inl.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Открытые члены</h2></td></tr>
 <tr class="memitem:ad94262f7765927bbe9a08e25f9c67530"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_g_test_flag_saver.html#ad94262f7765927bbe9a08e25f9c67530">GTestFlagSaver</a> ()</td></tr>
 <tr class="separator:ad94262f7765927bbe9a08e25f9c67530"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -85,7 +85,7 @@ $(function() {
 <div class="textblock">
 <p class="definition">См. определение в файле <a class="el" href="gtest-internal-inl_8h_source.html">gtest-internal-inl.h</a> строка <a class="el" href="gtest-internal-inl_8h_source.html#l00162">162</a></p>
 </div><h2 class="groupheader">Конструктор(ы)</h2>
-<a id="ad94262f7765927bbe9a08e25f9c67530"></a>
+<a id="ad94262f7765927bbe9a08e25f9c67530" name="ad94262f7765927bbe9a08e25f9c67530"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad94262f7765927bbe9a08e25f9c67530">&#9670;&nbsp;</a></span>GTestFlagSaver()</h2>
 
 <div class="memitem">
@@ -109,31 +109,32 @@ $(function() {
 </div><div class="memdoc">
 
 <p class="definition">См. определение в файле <a class="el" href="gtest-internal-inl_8h_source.html">gtest-internal-inl.h</a> строка <a class="el" href="gtest-internal-inl_8h_source.html#l00165">165</a></p>
-<div class="fragment"><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                   {</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    also_run_disabled_tests_ = <a class="code" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(also_run_disabled_tests);</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    break_on_failure_ = <a class="code" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(break_on_failure);</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    catch_exceptions_ = <a class="code" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(catch_exceptions);</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    color_ = <a class="code" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(color);</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    death_test_style_ = <a class="code" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(death_test_style);</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    death_test_use_fork_ = <a class="code" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(death_test_use_fork);</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    filter_ = <a class="code" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(filter);</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    internal_run_death_test_ = <a class="code" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(internal_run_death_test);</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    list_tests_ = <a class="code" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(list_tests);</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    output_ = <a class="code" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(output);</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    print_time_ = <a class="code" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(print_time);</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    random_seed_ = <a class="code" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(random_seed);</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    repeat_ = <a class="code" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(repeat);</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    shuffle_ = <a class="code" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(shuffle);</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    stack_trace_depth_ = <a class="code" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(stack_trace_depth);</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    stream_result_to_ = <a class="code" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(stream_result_to);</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    throw_on_failure_ = <a class="code" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(throw_on_failure);</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  }</div>
+<div class="fragment"><div class="line"><span class="lineno">  165</span>                   {</div>
+<div class="line"><span class="lineno">  166</span>    also_run_disabled_tests_ = <a class="code hl_define" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(also_run_disabled_tests);</div>
+<div class="line"><span class="lineno">  167</span>    break_on_failure_ = <a class="code hl_define" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(break_on_failure);</div>
+<div class="line"><span class="lineno">  168</span>    catch_exceptions_ = <a class="code hl_define" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(catch_exceptions);</div>
+<div class="line"><span class="lineno">  169</span>    color_ = <a class="code hl_define" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(color);</div>
+<div class="line"><span class="lineno">  170</span>    death_test_style_ = <a class="code hl_define" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(death_test_style);</div>
+<div class="line"><span class="lineno">  171</span>    death_test_use_fork_ = <a class="code hl_define" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(death_test_use_fork);</div>
+<div class="line"><span class="lineno">  172</span>    filter_ = <a class="code hl_define" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(filter);</div>
+<div class="line"><span class="lineno">  173</span>    internal_run_death_test_ = <a class="code hl_define" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(internal_run_death_test);</div>
+<div class="line"><span class="lineno">  174</span>    list_tests_ = <a class="code hl_define" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(list_tests);</div>
+<div class="line"><span class="lineno">  175</span>    output_ = <a class="code hl_define" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(output);</div>
+<div class="line"><span class="lineno">  176</span>    print_time_ = <a class="code hl_define" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(print_time);</div>
+<div class="line"><span class="lineno">  177</span>    random_seed_ = <a class="code hl_define" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(random_seed);</div>
+<div class="line"><span class="lineno">  178</span>    repeat_ = <a class="code hl_define" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(repeat);</div>
+<div class="line"><span class="lineno">  179</span>    shuffle_ = <a class="code hl_define" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(shuffle);</div>
+<div class="line"><span class="lineno">  180</span>    stack_trace_depth_ = <a class="code hl_define" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(stack_trace_depth);</div>
+<div class="line"><span class="lineno">  181</span>    stream_result_to_ = <a class="code hl_define" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(stream_result_to);</div>
+<div class="line"><span class="lineno">  182</span>    throw_on_failure_ = <a class="code hl_define" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(throw_on_failure);</div>
+<div class="line"><span class="lineno">  183</span>  }</div>
+<div class="ttc" id="agtest-port_8h_html_a828f4e34a1c4b510da50ec1563e3562a"><div class="ttname"><a href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a></div><div class="ttdeci">#define GTEST_FLAG(name)</div><div class="ttdef"><b>Definition:</b> <a href="gtest-port_8h_source.html#l02536">gtest-port.h:2536</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Перекрестные ссылки <a class="el" href="gtest-port_8h_source.html#l02536">GTEST_FLAG</a>.</p>
 
 </div>
 </div>
-<a id="a5f00786b5c9045fd5dd7c42fd7dd1476"></a>
+<a id="a5f00786b5c9045fd5dd7c42fd7dd1476" name="a5f00786b5c9045fd5dd7c42fd7dd1476"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5f00786b5c9045fd5dd7c42fd7dd1476">&#9670;&nbsp;</a></span>~GTestFlagSaver()</h2>
 
 <div class="memitem">
@@ -157,25 +158,25 @@ $(function() {
 </div><div class="memdoc">
 
 <p class="definition">См. определение в файле <a class="el" href="gtest-internal-inl_8h_source.html">gtest-internal-inl.h</a> строка <a class="el" href="gtest-internal-inl_8h_source.html#l00186">186</a></p>
-<div class="fragment"><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                    {</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <a class="code" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(also_run_disabled_tests) = also_run_disabled_tests_;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <a class="code" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(break_on_failure) = break_on_failure_;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <a class="code" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(catch_exceptions) = catch_exceptions_;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <a class="code" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(color) = color_;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <a class="code" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(death_test_style) = death_test_style_;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <a class="code" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(death_test_use_fork) = death_test_use_fork_;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <a class="code" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(filter) = filter_;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <a class="code" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(internal_run_death_test) = internal_run_death_test_;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <a class="code" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(list_tests) = list_tests_;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <a class="code" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(output) = output_;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <a class="code" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(print_time) = print_time_;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <a class="code" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(random_seed) = random_seed_;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <a class="code" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(repeat) = repeat_;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <a class="code" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(shuffle) = shuffle_;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <a class="code" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(stack_trace_depth) = stack_trace_depth_;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <a class="code" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(stream_result_to) = stream_result_to_;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <a class="code" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(throw_on_failure) = throw_on_failure_;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  }</div>
+<div class="fragment"><div class="line"><span class="lineno">  186</span>                    {</div>
+<div class="line"><span class="lineno">  187</span>    <a class="code hl_define" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(also_run_disabled_tests) = also_run_disabled_tests_;</div>
+<div class="line"><span class="lineno">  188</span>    <a class="code hl_define" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(break_on_failure) = break_on_failure_;</div>
+<div class="line"><span class="lineno">  189</span>    <a class="code hl_define" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(catch_exceptions) = catch_exceptions_;</div>
+<div class="line"><span class="lineno">  190</span>    <a class="code hl_define" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(color) = color_;</div>
+<div class="line"><span class="lineno">  191</span>    <a class="code hl_define" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(death_test_style) = death_test_style_;</div>
+<div class="line"><span class="lineno">  192</span>    <a class="code hl_define" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(death_test_use_fork) = death_test_use_fork_;</div>
+<div class="line"><span class="lineno">  193</span>    <a class="code hl_define" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(filter) = filter_;</div>
+<div class="line"><span class="lineno">  194</span>    <a class="code hl_define" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(internal_run_death_test) = internal_run_death_test_;</div>
+<div class="line"><span class="lineno">  195</span>    <a class="code hl_define" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(list_tests) = list_tests_;</div>
+<div class="line"><span class="lineno">  196</span>    <a class="code hl_define" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(output) = output_;</div>
+<div class="line"><span class="lineno">  197</span>    <a class="code hl_define" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(print_time) = print_time_;</div>
+<div class="line"><span class="lineno">  198</span>    <a class="code hl_define" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(random_seed) = random_seed_;</div>
+<div class="line"><span class="lineno">  199</span>    <a class="code hl_define" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(repeat) = repeat_;</div>
+<div class="line"><span class="lineno">  200</span>    <a class="code hl_define" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(shuffle) = shuffle_;</div>
+<div class="line"><span class="lineno">  201</span>    <a class="code hl_define" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(stack_trace_depth) = stack_trace_depth_;</div>
+<div class="line"><span class="lineno">  202</span>    <a class="code hl_define" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(stream_result_to) = stream_result_to_;</div>
+<div class="line"><span class="lineno">  203</span>    <a class="code hl_define" href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a>(throw_on_failure) = throw_on_failure_;</div>
+<div class="line"><span class="lineno">  204</span>  }</div>
 </div><!-- fragment -->
 <p class="reference">Перекрестные ссылки <a class="el" href="gtest-port_8h_source.html#l02536">GTEST_FLAG</a>.</p>
 
@@ -185,12 +186,9 @@ $(function() {
 <li>gtest/src/<a class="el" href="gtest-internal-inl_8h_source.html">gtest-internal-inl.h</a></li>
 </ul>
 </div><!-- contents -->
-<div class="ttc" id="agtest-port_8h_html_a828f4e34a1c4b510da50ec1563e3562a"><div class="ttname"><a href="gtest-port_8h.html#a828f4e34a1c4b510da50ec1563e3562a">GTEST_FLAG</a></div><div class="ttdeci">#define GTEST_FLAG(name)</div><div class="ttdef"><b>Definition:</b> <a href="gtest-port_8h_source.html#l02536">gtest-port.h:2536</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.16
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
 </small></address>
 </body>
 </html>

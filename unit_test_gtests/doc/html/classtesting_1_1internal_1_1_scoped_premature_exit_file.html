@@ -2,8 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.16"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>UnitIestExample: Класс testing::internal::ScopedPrematureExitFile</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -19,8 +19,8 @@
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
-  <td id="projectalign" style="padding-left: 0.5em;">
+ <tr id="projectrow">
+  <td id="projectalign">
    <div id="projectname">UnitIestExample
    </div>
   </td>
@@ -29,21 +29,22 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.16 -->
+<!-- Создано системой Doxygen 1.9.3 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Поиск','.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('',true,false,'search.php','Поиск');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -67,12 +68,11 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a>  </div>
-  <div class="headertitle">
-<div class="title">Класс testing::internal::ScopedPrematureExitFile</div>  </div>
+  <div class="headertitle"><div class="title">Класс testing::internal::ScopedPrematureExitFile</div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Открытые члены</h2></td></tr>
 <tr class="memitem:ae520883b8a6984a864ce675acedff4a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classtesting_1_1internal_1_1_scoped_premature_exit_file.html#ae520883b8a6984a864ce675acedff4a2">ScopedPrematureExitFile</a> (const char *premature_exit_filepath)</td></tr>
 <tr class="separator:ae520883b8a6984a864ce675acedff4a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -83,7 +83,7 @@ $(function() {
 <div class="textblock">
 <p class="definition">См. определение в файле <a class="el" href="gtest_8cc_source.html">gtest.cc</a> строка <a class="el" href="gtest_8cc_source.html#l03858">3858</a></p>
 </div><h2 class="groupheader">Конструктор(ы)</h2>
-<a id="ae520883b8a6984a864ce675acedff4a2"></a>
+<a id="ae520883b8a6984a864ce675acedff4a2" name="ae520883b8a6984a864ce675acedff4a2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae520883b8a6984a864ce675acedff4a2">&#9670;&nbsp;</a></span>ScopedPrematureExitFile()</h2>
 
 <div class="memitem">
@@ -108,23 +108,24 @@ $(function() {
 </div><div class="memdoc">
 
 <p class="definition">См. определение в файле <a class="el" href="gtest_8cc_source.html">gtest.cc</a> строка <a class="el" href="gtest_8cc_source.html#l03860">3860</a></p>
-<div class="fragment"><div class="line"><a name="l03861"></a><span class="lineno"> 3861</span>&#160;      : premature_exit_filepath_(premature_exit_filepath) {</div>
-<div class="line"><a name="l03862"></a><span class="lineno"> 3862</span>&#160;    <span class="comment">// If a path to the premature-exit file is specified...</span></div>
-<div class="line"><a name="l03863"></a><span class="lineno"> 3863</span>&#160;    <span class="keywordflow">if</span> (premature_exit_filepath != NULL &amp;&amp; *premature_exit_filepath != <span class="charliteral">&#39;\0&#39;</span>) {</div>
-<div class="line"><a name="l03864"></a><span class="lineno"> 3864</span>&#160;      <span class="comment">// create the file with a single &quot;0&quot; character in it.  I/O</span></div>
-<div class="line"><a name="l03865"></a><span class="lineno"> 3865</span>&#160;      <span class="comment">// errors are ignored as there&#39;s nothing better we can do and we</span></div>
-<div class="line"><a name="l03866"></a><span class="lineno"> 3866</span>&#160;      <span class="comment">// don&#39;t want to fail the test because of this.</span></div>
-<div class="line"><a name="l03867"></a><span class="lineno"> 3867</span>&#160;      FILE* pfile = <a class="code" href="namespacetesting_1_1internal_1_1posix.html#a4042201dcc4932641d484e7ddf94de7d">posix::FOpen</a>(premature_exit_filepath, <span class="stringliteral">&quot;w&quot;</span>);</div>
-<div class="line"><a name="l03868"></a><span class="lineno"> 3868</span>&#160;      fwrite(<span class="stringliteral">&quot;0&quot;</span>, 1, 1, pfile);</div>
-<div class="line"><a name="l03869"></a><span class="lineno"> 3869</span>&#160;      fclose(pfile);</div>
-<div class="line"><a name="l03870"></a><span class="lineno"> 3870</span>&#160;    }</div>
-<div class="line"><a name="l03871"></a><span class="lineno"> 3871</span>&#160;  }</div>
+<div class="fragment"><div class="line"><span class="lineno"> 3861</span>      : premature_exit_filepath_(premature_exit_filepath) {</div>
+<div class="line"><span class="lineno"> 3862</span>    <span class="comment">// If a path to the premature-exit file is specified...</span></div>
+<div class="line"><span class="lineno"> 3863</span>    <span class="keywordflow">if</span> (premature_exit_filepath != NULL &amp;&amp; *premature_exit_filepath != <span class="charliteral">&#39;\0&#39;</span>) {</div>
+<div class="line"><span class="lineno"> 3864</span>      <span class="comment">// create the file with a single &quot;0&quot; character in it.  I/O</span></div>
+<div class="line"><span class="lineno"> 3865</span>      <span class="comment">// errors are ignored as there&#39;s nothing better we can do and we</span></div>
+<div class="line"><span class="lineno"> 3866</span>      <span class="comment">// don&#39;t want to fail the test because of this.</span></div>
+<div class="line"><span class="lineno"> 3867</span>      FILE* pfile = <a class="code hl_function" href="namespacetesting_1_1internal_1_1posix.html#affa05d06d3e3b1ce975935cb0eac4fa7">posix::FOpen</a>(premature_exit_filepath, <span class="stringliteral">&quot;w&quot;</span>);</div>
+<div class="line"><span class="lineno"> 3868</span>      fwrite(<span class="stringliteral">&quot;0&quot;</span>, 1, 1, pfile);</div>
+<div class="line"><span class="lineno"> 3869</span>      fclose(pfile);</div>
+<div class="line"><span class="lineno"> 3870</span>    }</div>
+<div class="line"><span class="lineno"> 3871</span>  }</div>
+<div class="ttc" id="anamespacetesting_1_1internal_1_1posix_html_affa05d06d3e3b1ce975935cb0eac4fa7"><div class="ttname"><a href="namespacetesting_1_1internal_1_1posix.html#affa05d06d3e3b1ce975935cb0eac4fa7">testing::internal::posix::FOpen</a></div><div class="ttdeci">FILE * FOpen(const char *path, const char *mode)</div><div class="ttdef"><b>Definition:</b> <a href="gtest-port_8h_source.html#l02399">gtest-port.h:2399</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Перекрестные ссылки <a class="el" href="gtest-port_8h_source.html#l02399">testing::internal::posix::FOpen()</a>.</p>
 
 </div>
 </div>
-<a id="afa2ddc9bc1c2a90fd0dd82bb11fddc79"></a>
+<a id="afa2ddc9bc1c2a90fd0dd82bb11fddc79" name="afa2ddc9bc1c2a90fd0dd82bb11fddc79"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afa2ddc9bc1c2a90fd0dd82bb11fddc79">&#9670;&nbsp;</a></span>~ScopedPrematureExitFile()</h2>
 
 <div class="memitem">
@@ -148,11 +149,11 @@ $(function() {
 </div><div class="memdoc">
 
 <p class="definition">См. определение в файле <a class="el" href="gtest_8cc_source.html">gtest.cc</a> строка <a class="el" href="gtest_8cc_source.html#l03873">3873</a></p>
-<div class="fragment"><div class="line"><a name="l03873"></a><span class="lineno"> 3873</span>&#160;                             {</div>
-<div class="line"><a name="l03874"></a><span class="lineno"> 3874</span>&#160;    <span class="keywordflow">if</span> (premature_exit_filepath_ != NULL &amp;&amp; *premature_exit_filepath_ != <span class="charliteral">&#39;\0&#39;</span>) {</div>
-<div class="line"><a name="l03875"></a><span class="lineno"> 3875</span>&#160;      remove(premature_exit_filepath_);</div>
-<div class="line"><a name="l03876"></a><span class="lineno"> 3876</span>&#160;    }</div>
-<div class="line"><a name="l03877"></a><span class="lineno"> 3877</span>&#160;  }</div>
+<div class="fragment"><div class="line"><span class="lineno"> 3873</span>                             {</div>
+<div class="line"><span class="lineno"> 3874</span>    <span class="keywordflow">if</span> (premature_exit_filepath_ != NULL &amp;&amp; *premature_exit_filepath_ != <span class="charliteral">&#39;\0&#39;</span>) {</div>
+<div class="line"><span class="lineno"> 3875</span>      remove(premature_exit_filepath_);</div>
+<div class="line"><span class="lineno"> 3876</span>    }</div>
+<div class="line"><span class="lineno"> 3877</span>  }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -160,12 +161,9 @@ $(function() {
 <li>gtest/src/<a class="el" href="gtest_8cc_source.html">gtest.cc</a></li>
 </ul>
 </div><!-- contents -->
-<div class="ttc" id="anamespacetesting_1_1internal_1_1posix_html_a4042201dcc4932641d484e7ddf94de7d"><div class="ttname"><a href="namespacetesting_1_1internal_1_1posix.html#a4042201dcc4932641d484e7ddf94de7d">testing::internal::posix::FOpen</a></div><div class="ttdeci">FILE * FOpen(const char *path, const char *mode)</div><div class="ttdef"><b>Definition:</b> <a href="gtest-port_8h_source.html#l02399">gtest-port.h:2399</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.16
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
 </small></address>
 </body>
 </html>

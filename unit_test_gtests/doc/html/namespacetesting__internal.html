@@ -2,8 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.16"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>UnitIestExample: Пространство имен testing_internal</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -19,8 +19,8 @@
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
- <tr style="height: 56px;">
-  <td id="projectalign" style="padding-left: 0.5em;">
+ <tr id="projectrow">
+  <td id="projectalign">
    <div id="projectname">UnitIestExample
    </div>
   </td>
@@ -29,21 +29,22 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.16 -->
+<!-- Создано системой Doxygen 1.9.3 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Поиск','.html');
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
   initMenu('',true,false,'search.php','Поиск');
   $(document).ready(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -63,19 +64,18 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#func-members">Функции</a>  </div>
-  <div class="headertitle">
-<div class="title">Пространство имен testing_internal</div>  </div>
+  <div class="headertitle"><div class="title">Пространство имен testing_internal</div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Функции</h2></td></tr>
 <tr class="memitem:a3f49d3d0c996242f9d383c850097a656"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a3f49d3d0c996242f9d383c850097a656"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetesting__internal.html#a3f49d3d0c996242f9d383c850097a656">DefaultPrintNonContainerTo</a> (const T &amp;value, ::std::ostream *os)</td></tr>
 <tr class="separator:a3f49d3d0c996242f9d383c850097a656"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Функции</h2>
-<a id="a3f49d3d0c996242f9d383c850097a656"></a>
+<a id="a3f49d3d0c996242f9d383c850097a656" name="a3f49d3d0c996242f9d383c850097a656"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3f49d3d0c996242f9d383c850097a656">&#9670;&nbsp;</a></span>DefaultPrintNonContainerTo()</h2>
 
 <div class="memitem">
@@ -104,47 +104,45 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">См. определение в файле <a class="el" href="gtest-printers_8h_source.html">gtest-printers.h</a> строка <a class="el" href="gtest-printers_8h_source.html#l00222">222</a></p>
-<div class="fragment"><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                                                                {</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  <span class="comment">// With the following statement, during unqualified name lookup,</span></div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <span class="comment">// testing::internal2::operator&lt;&lt; appears as if it was declared in</span></div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  <span class="comment">// the nearest enclosing namespace that contains both</span></div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="comment">// ::testing_internal and ::testing::internal2, i.e. the global</span></div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  <span class="comment">// namespace.  For more details, refer to the C++ Standard section</span></div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  <span class="comment">// 7.3.4-1 [namespace.udir].  This allows us to fall back onto</span></div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  <span class="comment">// testing::internal2::operator&lt;&lt; in case T doesn&#39;t come with a &lt;&lt;</span></div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  <span class="comment">// operator.</span></div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  <span class="comment">//</span></div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  <span class="comment">// We cannot write &#39;using ::testing::internal2::operator&lt;&lt;;&#39;, which</span></div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  <span class="comment">// gcc 3.3 fails to compile due to a compiler bug.</span></div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  <span class="keyword">using namespace </span>::<a class="code" href="namespacetesting_1_1internal2.html">testing::internal2</a>;  <span class="comment">// NOLINT</span></div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160; </div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  <span class="comment">// Assuming T is defined in namespace foo, in the next statement,</span></div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <span class="comment">// the compiler will consider all of:</span></div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  <span class="comment">//</span></div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  <span class="comment">//   1. foo::operator&lt;&lt; (thanks to Koenig look-up),</span></div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  <span class="comment">//   2. ::operator&lt;&lt; (as the current namespace is enclosed in ::),</span></div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  <span class="comment">//   3. testing::internal2::operator&lt;&lt; (thanks to the using statement above).</span></div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  <span class="comment">//</span></div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  <span class="comment">// The operator&lt;&lt; whose type matches T best will be picked.</span></div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  <span class="comment">//</span></div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  <span class="comment">// We deliberately allow #2 to be a candidate, as sometimes it&#39;s</span></div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  <span class="comment">// impossible to define #1 (e.g. when foo is ::std, defining</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  <span class="comment">// anything in it is undefined behavior unless you are a compiler</span></div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  <span class="comment">// vendor.).</span></div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  *os &lt;&lt; value;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;}</div>
+<div class="fragment"><div class="line"><span class="lineno">  222</span>                                                                {</div>
+<div class="line"><span class="lineno">  223</span>  <span class="comment">// With the following statement, during unqualified name lookup,</span></div>
+<div class="line"><span class="lineno">  224</span>  <span class="comment">// testing::internal2::operator&lt;&lt; appears as if it was declared in</span></div>
+<div class="line"><span class="lineno">  225</span>  <span class="comment">// the nearest enclosing namespace that contains both</span></div>
+<div class="line"><span class="lineno">  226</span>  <span class="comment">// ::testing_internal and ::testing::internal2, i.e. the global</span></div>
+<div class="line"><span class="lineno">  227</span>  <span class="comment">// namespace.  For more details, refer to the C++ Standard section</span></div>
+<div class="line"><span class="lineno">  228</span>  <span class="comment">// 7.3.4-1 [namespace.udir].  This allows us to fall back onto</span></div>
+<div class="line"><span class="lineno">  229</span>  <span class="comment">// testing::internal2::operator&lt;&lt; in case T doesn&#39;t come with a &lt;&lt;</span></div>
+<div class="line"><span class="lineno">  230</span>  <span class="comment">// operator.</span></div>
+<div class="line"><span class="lineno">  231</span>  <span class="comment">//</span></div>
+<div class="line"><span class="lineno">  232</span>  <span class="comment">// We cannot write &#39;using ::testing::internal2::operator&lt;&lt;;&#39;, which</span></div>
+<div class="line"><span class="lineno">  233</span>  <span class="comment">// gcc 3.3 fails to compile due to a compiler bug.</span></div>
+<div class="line"><span class="lineno">  234</span>  <span class="keyword">using namespace </span>::<a class="code hl_namespace" href="namespacetesting_1_1internal2.html">testing::internal2</a>;  <span class="comment">// NOLINT</span></div>
+<div class="line"><span class="lineno">  235</span> </div>
+<div class="line"><span class="lineno">  236</span>  <span class="comment">// Assuming T is defined in namespace foo, in the next statement,</span></div>
+<div class="line"><span class="lineno">  237</span>  <span class="comment">// the compiler will consider all of:</span></div>
+<div class="line"><span class="lineno">  238</span>  <span class="comment">//</span></div>
+<div class="line"><span class="lineno">  239</span>  <span class="comment">//   1. foo::operator&lt;&lt; (thanks to Koenig look-up),</span></div>
+<div class="line"><span class="lineno">  240</span>  <span class="comment">//   2. ::operator&lt;&lt; (as the current namespace is enclosed in ::),</span></div>
+<div class="line"><span class="lineno">  241</span>  <span class="comment">//   3. testing::internal2::operator&lt;&lt; (thanks to the using statement above).</span></div>
+<div class="line"><span class="lineno">  242</span>  <span class="comment">//</span></div>
+<div class="line"><span class="lineno">  243</span>  <span class="comment">// The operator&lt;&lt; whose type matches T best will be picked.</span></div>
+<div class="line"><span class="lineno">  244</span>  <span class="comment">//</span></div>
+<div class="line"><span class="lineno">  245</span>  <span class="comment">// We deliberately allow #2 to be a candidate, as sometimes it&#39;s</span></div>
+<div class="line"><span class="lineno">  246</span>  <span class="comment">// impossible to define #1 (e.g. when foo is ::std, defining</span></div>
+<div class="line"><span class="lineno">  247</span>  <span class="comment">// anything in it is undefined behavior unless you are a compiler</span></div>
+<div class="line"><span class="lineno">  248</span>  <span class="comment">// vendor.).</span></div>
+<div class="line"><span class="lineno">  249</span>  *os &lt;&lt; value;</div>
+<div class="line"><span class="lineno">  250</span>}</div>
+<div class="ttc" id="anamespacetesting_1_1internal2_html"><div class="ttname"><a href="namespacetesting_1_1internal2.html">testing::internal2</a></div><div class="ttdef"><b>Definition:</b> <a href="gtest-printers_8h_source.html#l00114">gtest-printers.h:114</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Используется в <a class="el" href="gtest-printers_8h_source.html#l00442">testing::internal::DefaultPrintTo()</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
-<div class="ttc" id="anamespacetesting_1_1internal2_html"><div class="ttname"><a href="namespacetesting_1_1internal2.html">testing::internal2</a></div><div class="ttdef"><b>Definition:</b> <a href="gtest-printers_8h_source.html#l00114">gtest-printers.h:114</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Создано системой &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.16
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.3
 </small></address>
 </body>
 </html>
