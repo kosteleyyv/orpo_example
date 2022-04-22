@@ -55,5 +55,7 @@ public class TestMain  {
 		}
         // Закрываем браузер
         driver.quit();
+        
+        //java -jar ourjar.jar
     }
 }
