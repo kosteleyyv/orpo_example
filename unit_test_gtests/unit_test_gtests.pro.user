@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 7.0.0, 2022-04-17T01:02:53. -->
+<!-- Written by QtCreator 7.0.0, 2022-04-26T21:52:46. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -67,7 +67,14 @@
     <value type="bool" key="AutoTest.Framework.QtQuickTest">true</value>
     <value type="bool" key="AutoTest.Framework.QtTest">true</value>
    </valuemap>
-   <valuemap type="QVariantMap" key="AutoTest.CheckStates"/>
+   <valuemap type="QVariantMap" key="AutoTest.CheckStates">
+    <value type="Qt::CheckState" key="1@D:/gitrepo/orpo_example/unit_test_gtests/main.cpp:a_equal_b">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/gitrepo/orpo_example/unit_test_gtests/main.cpp:a_less_b">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/gitrepo/orpo_example/unit_test_gtests/main.cpp:a_more_b">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/gitrepo/orpo_example/unit_test_gtests/main.cpp:test001">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/gitrepo/orpo_example/unit_test_gtests/main.cpp:test002">Checked</value>
+    <value type="Qt::CheckState" key="1@D:/gitrepo/orpo_example/unit_test_gtests/main.cpp:test003">Checked</value>
+   </valuemap>
    <value type="int" key="AutoTest.RunAfterBuild">0</value>
    <value type="bool" key="AutoTest.UseGlobal">true</value>
    <valuelist type="QVariantList" key="ClangCodeModel.CustomCommandLineKey">

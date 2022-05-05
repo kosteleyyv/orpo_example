@@ -15,6 +15,7 @@ class Person implements Serializable{
         height=h;
         married=m;
     }
+    
     String getName() {return name;}
     int getAge(){ return age;}
     double getHeight(){return height;}
@@ -26,7 +27,7 @@ public class MainClass {
 		
 		try(ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("person.dat")))
         {
-            Person p = new Person("Sam", 33, 178, true);
+            Person p = new Person("Sam", 35, 155, false);
             oos.writeObject(p);
         }
         catch(Exception ex){

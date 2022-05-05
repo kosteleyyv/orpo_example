@@ -1,12 +1,14 @@
 ﻿// SocketServer.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
-
+#define  _CRT_SECURE_NO_WARNINGS
 #include <iostream>
+#include <chrono>
 
 #define _WINSOCK_DEPRECATED_NO_WARNINGS
 
 #include <WinSock2.h>
 #include <ws2tcpip.h>
+
 
 #define SIZE_BUFFER 1024
 
@@ -15,6 +17,18 @@
 //#define SERVER
 
 #ifdef SERVER
+
+using sysclock_t = std::chrono::system_clock;
+
+std::string CurrentDate()
+{
+	std::time_t now = sysclock_t::to_time_t(sysclock_t::now());
+
+	char buf[100] = { 0 };
+	std::strftime(buf, sizeof(buf), "%Y-%m-%d %H:%M:%S", std::localtime(&now));
+
+	return std::string(buf);
+}
 
 int WorkFunc(int value)
 {
@@ -40,11 +54,11 @@ void ProcessRequest(SOCKET sock)
 
 	int value=atoi(buffer);
 
-	std::cout << "Пришло value=" << value << std::endl;
+	std::cout << "Пришло value = " << value << std::endl;
 
 	value=WorkFunc(value);
 
-	std::cout << "Вычислили value=" << value << std::endl;
+	std::cout << "Вычислили value = " << value << std::endl;
 
 	memset(buffer, 0, SIZE_BUFFER);
 	_itoa_s(value, buffer, 10);
@@ -60,7 +74,7 @@ void ProcessRequest(SOCKET sock)
 
 	closesocket(sock);
 
-	std::cout << "end socket request process" << std::endl;
+	std::cout << "end socket request process" << std::endl << std::endl;
 }
 
 int main()
@@ -77,10 +91,6 @@ int main()
 		return 0;
 	}
 
-	SOCKADDR_IN sin = {0}; 
-	sin.sin_addr.s_addr = htonl(INADDR_ANY); 
-	sin.sin_family = AF_INET; 
-	sin.sin_port = htons(1234); 
 	SOCKET serverSocket = socket(AF_INET, SOCK_STREAM, 0); 
 
 	if (serverSocket == INVALID_SOCKET) {
@@ -89,6 +99,11 @@ int main()
 		system("pause");
 		return 0;
 	}
+
+	SOCKADDR_IN sin = { 0 };
+	sin.sin_addr.s_addr = htonl(INADDR_ANY);
+	sin.sin_family = AF_INET;
+	sin.sin_port = htons(1234);
 
 	int iResult=bind(serverSocket, (SOCKADDR*)&sin, sizeof(sin));
 	
@@ -104,11 +119,13 @@ int main()
 
 	while (1)
 	{
-		std::cout << "waiting...." << std::endl;
+		std::cout << "waiting...." << std::endl << std::endl;	
 
 		int sizeof_sin = sizeof(sin); 
 		SOCKET sock = accept(serverSocket, (SOCKADDR*)&sin, &sizeof_sin); 		
 
+		std::cout << CurrentDate() << " :: Host connected "<< inet_ntoa(sin.sin_addr)<< std::endl;
+		
 		if (sock != INVALID_SOCKET)
 		{
 			ProcessRequest(sock);
@@ -147,7 +164,7 @@ int main(int argc, char* argv[])
 		value=atoi(argv[1]);
 	}
 
-	std::cout << "value="<< value << std::endl;
+	std::cout << "value = "<< value << std::endl;
 
 	WSADATA WSAData = { 0 };
 	int wsaStatus = WSAStartup(MAKEWORD(2, 0), &WSAData);
@@ -158,7 +175,17 @@ int main(int argc, char* argv[])
 		system("pause");
 		return 0;
 	}
+
 	SOCKET clientSocket= socket(AF_INET, SOCK_STREAM, 0);
+
+	if (clientSocket == INVALID_SOCKET)
+	{
+		std::cout << "INVALID_SOCKET by socket" << WSAGetLastError();
+		WSACleanup();
+
+		system("pause");
+		return 0;
+	}
 
 	SOCKADDR_IN sin = {0};//information about the socket
 
@@ -166,14 +193,7 @@ int main(int argc, char* argv[])
 	sin.sin_family = AF_INET;
 	sin.sin_port = htons(1234);
 
-	if (clientSocket == INVALID_SOCKET)
-	{
-		std::cout << "INVALID_SOCKET by socket" << WSAGetLastError();		
-		WSACleanup();
-
-		system("pause");
-		return 0;
-	}
+	
 
 	int iResult = connect(clientSocket, (SOCKADDR*)&sin, sizeof(sin));
 
