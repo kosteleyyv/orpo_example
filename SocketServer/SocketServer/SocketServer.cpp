@@ -14,9 +14,6 @@
 
 #pragma comment(lib, "ws2_32.lib")
 
-//#define SERVER
-
-#ifdef SERVER
 
 using sysclock_t = std::chrono::system_clock;
 
@@ -30,9 +27,14 @@ std::string CurrentDate()
 	return std::string(buf);
 }
 
+//#define SERVER
+
+#ifdef SERVER
+
+
 int WorkFunc(int value)
 {
-	return value* value;
+	return value*value;
 }
 
 void ProcessRequest(SOCKET sock)
@@ -121,7 +123,7 @@ int main()
 	{
 		std::cout << "waiting...." << std::endl << std::endl;	
 
-		int sizeof_sin = sizeof(sin); 
+		int sizeof_sin = sizeof(sin);
 		SOCKET sock = accept(serverSocket, (SOCKADDR*)&sin, &sizeof_sin); 		
 
 		std::cout << CurrentDate() << " :: Host connected "<< inet_ntoa(sin.sin_addr)<< std::endl;
@@ -143,7 +145,6 @@ int main()
 }
 #endif // DEBUG
 
-
 #define CLIENT
 
 #ifdef CLIENT
@@ -153,7 +154,7 @@ int main(int argc, char* argv[])
 {
 	setlocale(LC_ALL, "Russian");
 
-	int value = -2;
+	int value = 3200;
 
 	if (argc==1)
 	{
@@ -244,6 +245,9 @@ int main(int argc, char* argv[])
 
 	std::cout << "value=" << value << std::endl;
 	std::cout << "end socket request process " << std::endl;
+
+	closesocket(clientSocket);
+	WSACleanup();
 
 	system("pause");
 	return 0;
